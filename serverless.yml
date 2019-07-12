@@ -11,10 +11,14 @@ plugins:
 provider:
   name: aws
   runtime: nodejs10.x
+#  environment:
+#    NODE_PATH: "./:/opt/node_modules"
 
 layers:
   graphql_poc-node_modules:
-    path: node_modules # required, path to layer contents on disk
+    package:
+      artifact: lambda_layer.zip
+#    path: node_modules # required, path to layer contents on disk
     name: graphql_poc-node_modules # optional, Deployed Lambda layer name
     compatibleRuntimes: # optional, a list of runtimes this layer is compatible with
       - nodejs8.10
@@ -30,5 +34,5 @@ functions:
       - { Ref: GraphqlUnderscorepocDashnodeUnderscoremodulesLambdaLayer }
     events:
       - http:
-          method: post
+          method: any
           path: graphql

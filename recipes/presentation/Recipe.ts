@@ -26,7 +26,7 @@ export class RecipeResolver {
 
   @Query(returns => Recipe)
   async recipe(@Arg("id") id: string) {
-    const recipe = {  }
+    const recipe = mockRecipe
     if (recipe === undefined) {
       throw new Error('Oh no man!');
     }

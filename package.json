@@ -5,6 +5,8 @@
   "main": "handler.js",
   "scripts": {
     "start": "sls offline --useSeparateProcesses",
+    "prep:layer": "npm prune --production && mkdir nodejs && cp -a node_modules/. nodejs/node_modules && zip -r -qq lambda_layer.zip nodejs",
+    "deploy": "yarn prep:layer && sls deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
