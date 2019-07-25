@@ -1,0 +1,6 @@
+version: '2.1'
+services:
+  localstack:
+    image: instructure/dynamo-local-admin
+    ports:
+      - "8000:8000"

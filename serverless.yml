@@ -6,33 +6,44 @@ service:
 # Add the serverless-webpack plugin
 plugins:
   - serverless-webpack
+  - serverless-dynamodb-local
   - serverless-offline
+  - serverless-layers
 
 provider:
   name: aws
   runtime: nodejs10.x
-#  environment:
-#    NODE_PATH: "./:/opt/node_modules"
-
-layers:
-  graphql_poc-node_modules:
-    package:
-      artifact: lambda_layer.zip
-#    path: node_modules # required, path to layer contents on disk
-    name: graphql_poc-node_modules # optional, Deployed Lambda layer name
-    compatibleRuntimes: # optional, a list of runtimes this layer is compatible with
-      - nodejs8.10
-#    licenseInfo: GPLv3 # optional, a string specifying license information
-#    allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
-#      - '*'
-    retain: false # optional, false by default. If true, layer versions are not deleted as new ones are created
+  deploymentBucket:
+    name: graphql-poc-serverless
 
 functions:
   api:
-    handler: handler.graphql
-    layers:
-      - { Ref: GraphqlUnderscorepocDashnodeUnderscoremodulesLambdaLayer }
+    handler: src/server.graphql
     events:
       - http:
           method: any
           path: graphql
+          cors: true
+
+custom:
+  dynamodb:
+    stages:
+      - local
+    start:
+      port: 8000
+      inMemory: false
+      heapInitial: 200m
+      heapMax: 1g
+      migrate: false
+      seed: false
+      convertEmptyValues: false
+    seed:
+      domain:
+        sources:
+          - table: GraphqlPoc
+            sources: [./src/_common/database/seeds/users.json]
+  serverless-layers:
+    packageManager: yarn
+    compileDir: .serverless
+    packagePath: package.json
+    compatibleRuntimes: ['nodejs']

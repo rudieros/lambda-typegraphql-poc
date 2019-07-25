@@ -1,24 +1,8 @@
-import { Arg, Args, Authorized, Ctx, Field, ID, Mutation, ObjectType, Query, Resolver } from 'type-graphql'
+import { Arg, Args, Ctx, Mutation, Query, Resolver } from 'type-graphql'
 import { mockRecipe } from './mockRecipe'
-import { NewRecipeDataInput, RecipesArgs, User } from './models/GetRecipe'
-
-@ObjectType()
-export class Recipe {
-  @Field(() => ID)
-  id: string
-
-  @Field()
-  title: string
-
-  @Field({ nullable: true })
-  description?: string
-
-  @Field()
-  creationDate: Date
-
-  @Field(() => [String])
-  ingredients: string[]
-}
+import { RecipesArgs, User } from './models/GetRecipe'
+import { CreateRecipeInput } from './models/CreateRecipeInput'
+import { Recipe } from '../../_common/models/Recipe'
 
 @Resolver(Recipe)
 export class RecipeResolver {
@@ -41,7 +25,7 @@ export class RecipeResolver {
 
   @Mutation(returns => Recipe)
   addRecipe(
-    @Arg("newRecipeData") newRecipeData: NewRecipeDataInput,
+    @Arg("newRecipeData") newRecipeData: CreateRecipeInput,
     @Ctx("user") user: User,
   ): Promise<Recipe> {
     return Promise.resolve(mockRecipe)
