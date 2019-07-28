@@ -8,6 +8,5 @@ jspm_packages
 # Webpack directories
 .webpack
 
+# Local Dynamodb
 .dynamodb
-
-lambda_layer.zip

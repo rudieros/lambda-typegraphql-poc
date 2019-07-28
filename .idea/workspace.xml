@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b76d92a5-6908-4dfd-b42f-4e663e6058c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/generateSchema.Js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/database/tableNames.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest/globalJestSetup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest/globalJestTeardown.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_common/architecture/BaseUseCase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_common/authorization/UserRoles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUsersMocks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/data/UserDataBase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/generateSchema.Js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generateSchema.Js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/database/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/db.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userRelationEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userRelationEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/presentation/UserResolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/core/data-sources/RecipeDataSource.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.webpack/" />
@@ -30,77 +41,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serverless.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prettierrc.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/generateSchema.Js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schema.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +64,7 @@
       <find>tableName</find>
       <find>salt</find>
       <find>createTa</find>
+      <find>query</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,13 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/recipes/presentation/Recipe.ts" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/recipes/core/data-sources/RecipeDataSource.ts" />
-        <option value="$PROJECT_DIR$/src/recipes/presentation/models/GetRecipe.ts" />
-        <option value="$PROJECT_DIR$/src/recipes/presentation/models/CreateRecipeInput.ts" />
-        <option value="$PROJECT_DIR$/src/recipes/presentation/RecipeResolver.ts" />
-        <option value="$PROJECT_DIR$/src/_models/Recipe.ts" />
         <option value="$PROJECT_DIR$/handler.ts" />
         <option value="$PROJECT_DIR$/src/_models/User.ts" />
         <option value="$PROJECT_DIR$/src/_database/mainTable.ts" />
@@ -139,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts" />
         <option value="$PROJECT_DIR$/src/_common/models/User.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/mainTable.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts" />
         <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" />
         <option value="$PROJECT_DIR$/src/users/presentation/models/CreateFollowRelationInput.ts" />
@@ -148,22 +89,41 @@
         <option value="$PROJECT_DIR$/src/_common/database/seeds/users.json" />
         <option value="$PROJECT_DIR$/serverless.yml" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/_common/database/db.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/tableNames.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/entities/userRelationEntity.ts" />
-        <option value="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" />
         <option value="$PROJECT_DIR$/src/users/presentation/UserResolver.ts" />
         <option value="$PROJECT_DIR$/prettierrc.json" />
-        <option value="$PROJECT_DIR$/jest.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/src/users/presentation/__tests__/UserResolver.test.ts" />
         <option value="$PROJECT_DIR$/src/_common/scripts/generateSchema.ts" />
         <option value="$PROJECT_DIR$/src/_common/scripts/generateSchema.js" />
-        <option value="$PROJECT_DIR$/schema.json" />
         <option value="$PROJECT_DIR$/scripts/generateSchema.js" />
         <option value="$PROJECT_DIR$/scripts/generateSchema.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/jest/setup.js" />
+        <option value="$PROJECT_DIR$/src/_common/mocks/apolloClientMock.ts" />
+        <option value="$PROJECT_DIR$/schema.json" />
+        <option value="$PROJECT_DIR$/scripts/generateSchema.Js" />
+        <option value="$PROJECT_DIR$/jest/setupDynamoLocal.ts" />
+        <option value="$PROJECT_DIR$/.env.test" />
+        <option value="$PROJECT_DIR$/jest/globalJestTeardown.ts" />
+        <option value="$PROJECT_DIR$/jest.config.js" />
+        <option value="$PROJECT_DIR$/src/_common/mocks/dynamoEntitiesMocks.ts" />
+        <option value="$PROJECT_DIR$/src/_common/database/db.ts" />
+        <option value="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" />
+        <option value="$PROJECT_DIR$/src/server.ts" />
+        <option value="$PROJECT_DIR$/jest/globalJestSetup.ts" />
+        <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUsersMocks.ts" />
+        <option value="$PROJECT_DIR$/src/context.ts" />
+        <option value="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" />
+        <option value="$PROJECT_DIR$/src/_common/architecture/BaseUseCase.ts" />
+        <option value="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" />
+        <option value="$PROJECT_DIR$/src/users/data/UserDataBase.ts" />
+        <option value="$PROJECT_DIR$/src/_common/authorization/UserRoles.ts" />
+        <option value="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" />
+        <option value="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" />
+        <option value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
       </list>
     </option>
   </component>
@@ -186,59 +146,26 @@
             <path>
               <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="_common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="data-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="_common" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="use-cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="use-cases" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateFollowRelationUC.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="use-cases" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateUserUC.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -253,7 +180,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="User.resolver.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,13 +194,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/users/core/use-cases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -283,17 +211,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/_common" />
       <recent name="$PROJECT_DIR$/src/_models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jest" />
       <recent name="$PROJECT_DIR$/src/users/core/use-cases" />
       <recent name="$PROJECT_DIR$/src/users/presentation/models" />
       <recent name="$PROJECT_DIR$/src/_common/database/entities" />
       <recent name="$PROJECT_DIR$/src/_models" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,8 +236,68 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Attach to Node.js/Chrome.Debug Sls Offline">
+  <component name="RunManager" selected="Jest.UserResolver.Queries.`me` should return value successfully">
     <configuration name="Debug Sls Offline" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229" restartOnDisconnect="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResolver.Queries" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
+      <test-names>
+        <test-name value="UserResolver" />
+        <test-name value="Queries" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResolver.Queries.`me` should return value successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
+      <test-names>
+        <test-name value="UserResolver" />
+        <test-name value="Queries" />
+        <test-name value="`me` should return value successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResolver.Queries.me" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
+      <test-names>
+        <test-name value="UserResolver" />
+        <test-name value="Queries" />
+        <test-name value="me" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResolver.Queries.me.should return value successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
+      <test-names>
+        <test-name value="UserResolver" />
+        <test-name value="Queries" />
+        <test-name value="me" />
+        <test-name value="should return value successfully" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -325,9 +313,17 @@
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Debug Sls Offline" />
       <item itemvalue="npm.debug" />
+      <item itemvalue="Jest.UserResolver.Queries" />
+      <item itemvalue="Jest.UserResolver.Queries.me" />
+      <item itemvalue="Jest.UserResolver.Queries.me.should return value successfully" />
+      <item itemvalue="Jest.UserResolver.Queries.`me` should return value successfully" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.UserResolver.Queries.`me` should return value successfully" />
+        <item itemvalue="Jest.UserResolver.Queries.me.should return value successfully" />
+        <item itemvalue="Jest.UserResolver.Queries.me" />
+        <item itemvalue="Jest.UserResolver.Queries" />
         <item itemvalue="npm.debug" />
       </list>
     </recent_temporary>
@@ -345,15 +341,48 @@
       <workItem from="1562899916719" duration="20642000" />
       <workItem from="1564017405577" duration="826000" />
       <workItem from="1564018754935" duration="3325000" />
-      <workItem from="1564324682377" duration="10827000" />
+      <workItem from="1564324682377" duration="20133000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 16h 07m 14s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 16h 47m 36s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 16h 58m 42s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 00m 21s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 04m 39s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 32m 15s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 33m 47s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 34m 07s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 37m 57s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="UserResolver_Queries_`me`_should_return_value_successfully - 2019.07.28 at 17h 40m 46s.xml">
+      <configuration name="UserResolver.Queries.`me` should return value successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35620000" />
+    <option name="totallyTimeSpent" value="44926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -365,17 +394,17 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32923833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44963145" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38329238" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36977887" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36977887" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923833" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
       <window_info anchor="bottom" id="GraphQL" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -414,8 +443,24 @@
         <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.js" />
         <option value="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.js" />
         <option value="$PROJECT_DIR$/src/_common/graphql/commonTypes/Response.js" />
+        <option value="$PROJECT_DIR$/src/users/presentation/User.resolver.js" />
+        <option value="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.js" />
+        <option value="$PROJECT_DIR$/src/users/presentation/models/CreateFollowRelationInput.js" />
+        <option value="$PROJECT_DIR$/src/_common/database/entities/userEntity.js" />
+        <option value="$PROJECT_DIR$/src/_common/database/entities/userRelationEntity.js" />
+        <option value="$PROJECT_DIR$/src/_common/models/User.js" />
+        <option value="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.js" />
+        <option value="$PROJECT_DIR$/src/_common/database/tableNames.js" />
+        <option value="$PROJECT_DIR$/src/_common/database/db.js" />
+        <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateFollowRelationUC.js" />
+        <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.js" />
+        <option value="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.js" />
+        <option value="$PROJECT_DIR$/src/_common/graphql/commonTypes/Response.js" />
       </list>
     </option>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,140 +477,74 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/jest/globalJestTeardown.ts</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>useCase.execute</expression-string>
+        <expression-string>result.data.me.id</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>input</expression-string>
+        <expression-string>result.data</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>UserEntity.batchPut(MOCK_USERS).then((data) =&gt; {
+    console.log('He')
+  })
+    .catch</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.errors[0].locations</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.errors[9].locations</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.errors</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-server-lambda/src/ApolloServer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/core/data-sources/RecipeDataSource.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/presentation/models/CreateRecipeInput.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/presentation/models/GetRecipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/models/Recipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.dynamodb/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/models/CreateFollowRelationInput.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/type-graphql/dist/decorators/types.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/type-graphql/dist/decorators/Mutation.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateFollowRelationUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/graphql/commonTypes/Response.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/presentation/mockRecipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/core/use-cases/CreateRecipeUC.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/recipes/presentation/RecipeResolver.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -573,13 +552,6 @@
           <folding>
             <element signature="e#0#72#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/models/User.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -647,24 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_common/database/tableNames.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/db.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -674,26 +632,6 @@
           <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/entities/userEntity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jest.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prettierrc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -733,47 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/User.resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-server-testing/dist/createTestClient.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="54" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/type-graphql/dist/utils/buildSchema.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -784,24 +678,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/User.resolver.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tempDist/users/presentation/User.resolver.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-server-testing/node_modules/apollo-server-core/dist/ApolloServer.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-server-testing/src/createTestClient.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-server-testing/dist/createTestClient.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generateSchema.Js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/schema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/dynamoEntitiesMocks.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest/setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/database/db.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUsersMocks.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/database/entities/userEntity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest/globalJestSetup.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest/globalJestTeardown.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/architecture/BaseUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/authorization/UserRoles.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/data/UserDataBase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/models/User.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/type-graphql/dist/decorators/Authorized.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/User.resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

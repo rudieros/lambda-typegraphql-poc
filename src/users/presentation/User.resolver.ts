@@ -1,4 +1,4 @@
-import { Arg, Args, Ctx, FieldResolver, Int, Mutation, Query, Resolver, Root } from 'type-graphql'
+import { Arg, Args, Authorized, Ctx, FieldResolver, Int, Mutation, Query, Resolver, Root } from 'type-graphql'
 import { PaginationArgs } from '../../_common/graphql/commonTypes/PaginationArgs'
 import { User } from '../../_common/models/User'
 import { CreateUserInput } from './models/CreateUserInput'
@@ -6,6 +6,7 @@ import { CreateUserUC } from '../core/use-cases/CreateUserUC'
 import { CreateFollowRelationInput } from './models/CreateFollowRelationInput'
 import { CreateFollowRelationUC } from '../core/use-cases/CreateFollowRelationUC'
 import { errorResponse, Response, sucessReponse } from '../../_common/graphql/commonTypes/Response'
+import { UserRoles } from '../../_common/authorization/UserRoles'
 
 @Resolver(User)
 export class UserResolver {
@@ -22,6 +23,7 @@ export class UserResolver {
     return useCase.execute(input).then(sucessReponse).catch(errorResponse)
   }
 
+  @Authorized(UserRoles.USER)
   @Query(returns => User)
   async me() {
     return {
@@ -30,6 +32,7 @@ export class UserResolver {
     }
   }
 
+  @Authorized(UserRoles.USER)
   @FieldResolver()
   async friends(@Args() { pageKey }: PaginationArgs, @Ctx() context) {
     return [

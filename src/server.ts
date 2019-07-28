@@ -2,28 +2,25 @@ import 'reflect-metadata'
 import 'source-map-support/register'
 import './_common/database/db'
 import { buildSchemaSync } from 'type-graphql'
-import { ApolloServer, Config } from 'apollo-server-lambda'
-import { RecipeResolver } from './recipes/presentation/RecipeResolver'
+import { ApolloServer } from 'apollo-server-lambda'
 import { UserResolver } from './users/presentation/User.resolver'
+import { authChecker } from './_common/authorization/authChecker'
 
 export const schema = buildSchemaSync({
   resolvers: [
-    RecipeResolver,
     UserResolver,
   ],
+  authChecker,
 })
 
-export const serverConfig: Config = {
+export const server = new ApolloServer({
   schema,
-  playground: true,
-  context: () => {
+  context: (input) => {
     return {
       dude: true,
     }
   }
-}
-
-const server = new ApolloServer(serverConfig)
+})
 
 export const graphql = server.createHandler({
   cors: {
