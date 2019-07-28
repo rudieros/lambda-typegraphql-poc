@@ -2,18 +2,18 @@ import 'reflect-metadata'
 import 'source-map-support/register'
 import './_common/database/db'
 import { buildSchemaSync } from 'type-graphql'
-import { ApolloServer } from 'apollo-server-lambda'
+import { ApolloServer, Config } from 'apollo-server-lambda'
 import { RecipeResolver } from './recipes/presentation/RecipeResolver'
-import { UserResolver } from './users/presentation/UserResolver'
+import { UserResolver } from './users/presentation/User.resolver'
 
-const schema = buildSchemaSync({
+export const schema = buildSchemaSync({
   resolvers: [
     RecipeResolver,
     UserResolver,
   ],
 })
 
-const server = new ApolloServer({
+export const serverConfig: Config = {
   schema,
   playground: true,
   context: () => {
@@ -21,7 +21,9 @@ const server = new ApolloServer({
       dude: true,
     }
   }
-})
+}
+
+const server = new ApolloServer(serverConfig)
 
 export const graphql = server.createHandler({
   cors: {

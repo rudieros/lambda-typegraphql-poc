@@ -1,4 +1,4 @@
-import * as dynamoose from 'dynamoose'
+import * as dynamoose from '@appsimples/dynamoose'
 
 if (process.env.IS_OFFLINE) {
   dynamoose.local()

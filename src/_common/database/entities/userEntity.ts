@@ -1,16 +1,6 @@
-import { MainTableBaseSchema, MainTableDB, MainTableSchema } from '../mainTableBaseSchema'
+import { MainTableBaseSchema, MainTableDB } from '../mainTableBaseSchema'
 import { db, Schema } from '../db'
-
-export const userEntity = {
-  tableSchema: MainTableSchema,
-
-}
-
-class UserEntityDocument {
-  id: string
-  name: string
-  email: string
-}
+import { TableNames } from '../tableNames'
 
 export interface UserDB extends MainTableDB {
   name: string
@@ -34,8 +24,9 @@ export const UserSchema = new Schema({
     useDocumentTypes: true
   })
 
+
 export const UserEntity = db.model<UserDB, MainTableDB>('GraphQL_POC', UserSchema,
-//   {
-//   tableName: 'GraphqlPoc'
-// }
-)
+  {
+    tableName: TableNames.MAIN,
+    create: true,
+  })

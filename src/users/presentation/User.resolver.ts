@@ -9,7 +9,6 @@ import { errorResponse, Response, sucessReponse } from '../../_common/graphql/co
 
 @Resolver(User)
 export class UserResolver {
-  // constructor(private recipeService: RecipeService) {}
 
   @Mutation(returns => User)
   async createUser(@Arg('user') input: CreateUserInput) {
@@ -50,36 +49,4 @@ export class UserResolver {
     console.log('friends', friends)
     return friends && friends.length || 0
   }
-
-  // @Query(returns => Recipe)
-  // async recipe(@Arg("id") id: string) {
-  //   const recipe = mockRecipe
-  //   if (recipe === undefined) {
-  //     throw new Error('Oh no man!');
-  //   }
-  //   return recipe;
-  // }
-
-  // @Query(returns => [Recipe])
-  // recipes(@Args() { skip, take }: RecipesArgs) {
-  //   // return this.recipeService.findAll({ skip, take });
-  //   return [mockRecipe, mockRecipe]
-  // }
-  //
-  // @Mutation(returns => Recipe)
-  // addRecipe(
-  //   @Arg("newRecipeData") newRecipeData: CreateUserInput,
-  //   @Ctx("user") user: User,
-  // ): Promise<Recipe> {
-  //   return Promise.resolve(mockRecipe)
-  // }
-  //
-  // @Mutation(returns => Boolean)
-  // async removeRecipe(@Arg("id") id: string) {
-  //   try {
-  //     return true;
-  //   } catch {
-  //     return false;
-  //   }
-  // }
 }
