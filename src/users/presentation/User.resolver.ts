@@ -41,7 +41,7 @@ export class UserResolver {
 
   @Authorized(UserRoles.USER)
   @FieldResolver()
-  async friends(@Args() { pageKey }: PaginationArgs, @Ctx() context) {
+  async friends(@Args() { pageKey }: PaginationArgs) {
     return [
       {
         id: 'olaaa',

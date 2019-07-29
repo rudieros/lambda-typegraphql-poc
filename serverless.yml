@@ -1,9 +1,6 @@
 service:
   name: graphql-poc
-#app: your-app-name
-#tenant: your-tenant-name
 
-# Add the serverless-webpack plugin
 plugins:
   - serverless-webpack
   - serverless-dynamodb-local
@@ -22,7 +19,7 @@ functions:
     events:
       - http:
           method: any
-          path: graphql
+          path: /{proxy+}
           cors: true
 
 custom:

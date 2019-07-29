@@ -10,6 +10,7 @@ import { setupContainer } from './container'
 import * as fs from 'fs'
 import * as path from 'path'
 import { resolvers } from './resolvers'
+import { APIGatewayEvent, Callback, Context } from 'aws-lambda'
 
 export const schema = buildSchemaSync({
   resolvers,
@@ -36,10 +37,19 @@ export const server = new ApolloServer({
   },
 })
 
-export const graphql = server.createHandler({
-  cors: {
-    origin: '*',
-    methods: '*',
-    allowedHeaders: '*',
-  },
-})
+export const graphql = (
+  e: APIGatewayEvent,
+  context: Context,
+  callback: Callback
+) => {
+  if (e.path === '/graphql') {
+    return server.createHandler({
+      cors: {
+        origin: '*',
+        methods: '*',
+        allowedHeaders: '*',
+      },
+    })(e, context, callback)
+  } else if (e.path === '/graphiql') {
+  }
+}

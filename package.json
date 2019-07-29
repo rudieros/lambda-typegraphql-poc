@@ -7,7 +7,10 @@
     "start": "sls offline start --useSeparateProcesses -s local",
     "debug": "SLS_DEBUG=* && node --inspect=9229 ./node_modules/.bin/serverless offline start --useSeparateProcesses -s local",
     "deploy": "sls deploy",
-    "db:local": "AWS_REGION=us-east-1 AWS_ACCESS_KEY_ID=local AWS_SECRET_ACCESS_KEY=local dynamodb-admin --open",
+    "dynamo:admin": "AWS_REGION=us-east-1 AWS_ACCESS_KEY_ID=local AWS_SECRET_ACCESS_KEY=local dynamodb-admin --open",
+    "dynamo": "ts-node ./scripts/dynamo.ts && AWS_REGION=us-east-1 AWS_ACCESS_KEY_ID=local AWS_SECRET_ACCESS_KEY=local dynamodb-admin --open",
+    "backup": "ts-node ./scripts/dynamoBackup.ts",
+    "restore": "ts-node ./scripts/dynamoRestore.ts",
     "sync": "ts-node ./scripts/createSchema.ts",
     "test": "jest"
   },

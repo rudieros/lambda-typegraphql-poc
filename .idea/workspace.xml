@@ -2,50 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b76d92a5-6908-4dfd-b42f-4e663e6058c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/authorization/authChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/authorization/authChecker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/db.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/tableNames.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/tableNames.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/models/Group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/Group.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/utils/generateId.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/utils/generateId.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/dynamo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/dynamoBackup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/dynamoRestore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/launchLocalDynamodb.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/setupTestEnvironmentVariables.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/stopLocalDynamodb.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/syncAllLocalDataToTables.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/featureFlags.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/graphql-poc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/graphql-poc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest/globalJestSetup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest/globalJestSetup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/createSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/createSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resolvers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.webpack/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,97 +34,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts">
+        <entry file="file://$PROJECT_DIR$/serverless.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="304">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.prettierrc.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="777">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -180,23 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" />
-        <option value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
-        <option value="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIDUC.ts" />
-        <option value="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" />
-        <option value="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" />
-        <option value="$PROJECT_DIR$/src/_common/utils/generateId.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateFollowRelationUC.ts" />
-        <option value="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" />
-        <option value="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" />
-        <option value="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" />
-        <option value="$PROJECT_DIR$/jest/setup.js" />
-        <option value="$PROJECT_DIR$/src/_common/architecture/BaseDynamoDataBase.ts" />
-        <option value="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" />
-        <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUsersMocks.ts" />
-        <option value="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" />
-        <option value="$PROJECT_DIR$/src/_common/models/Group.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" />
         <option value="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" />
@@ -211,170 +90,87 @@
         <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelationResolverForGroups.ts" />
         <option value="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" />
-        <option value="$PROJECT_DIR$/jest/globalJestSetup.ts" />
         <option value="$PROJECT_DIR$/schema.json" />
         <option value="$PROJECT_DIR$/src/resolvers.ts" />
         <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" />
-        <option value="$PROJECT_DIR$/scripts/createSchema.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" />
         <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" />
         <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" />
-        <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" />
-        <option value="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" />
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts" />
         <option value="$PROJECT_DIR$/prettierrc.json" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" />
+        <option value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
+        <option value="$PROJECT_DIR$/.env.test" />
+        <option value="$PROJECT_DIR$/jest/globalJestSetup.ts" />
+        <option value="$PROJECT_DIR$/scripts/setupTestEnvironmentVariables.ts" />
+        <option value="$PROJECT_DIR$/scripts/launchLocalDynamodb.ts" />
+        <option value="$PROJECT_DIR$/scripts/stopLocalDynamodb.ts" />
+        <option value="$PROJECT_DIR$/src/featureFlags.ts" />
+        <option value="$PROJECT_DIR$/scripts/createSchema.ts" />
+        <option value="$PROJECT_DIR$/scripts/backupDynamo.ts" />
+        <option value="$PROJECT_DIR$/scripts/syncLocalTables.ts" />
+        <option value="$PROJECT_DIR$/scripts/syncDynamo.ts" />
+        <option value="$PROJECT_DIR$/scripts/dynamoBackup.ts" />
+        <option value="$PROJECT_DIR$/scripts/dynamoRestore.ts" />
+        <option value="$PROJECT_DIR$/.dynamodb/backup/GraphQLMainTable.json" />
+        <option value="$PROJECT_DIR$/scripts/dynamo.ts" />
+        <option value="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" />
+        <option value="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" />
+        <option value="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/scripts/syncAllLocalDataToTables.ts" />
+        <option value="$PROJECT_DIR$/serverless.yml" />
+        <option value="$PROJECT_DIR$/src/server.ts" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-241" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda-typegraphql-poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-typegraphql-poc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda-typegraphql-poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-typegraphql-poc" type="462c0819:PsiDirectoryNode" />
+              <item name=".dynamodb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda-typegraphql-poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-typegraphql-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_common" type="462c0819:PsiDirectoryNode" />
-              <item name="mocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_common" type="462c0819:PsiDirectoryNode" />
-              <item name="mocks" type="462c0819:PsiDirectoryNode" />
-              <item name="databaseMockInjectors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="groups" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="groups" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="groups" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="use-cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="groups" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userGroupRelation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userGroupRelation" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userGroupRelation" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="use-cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userGroupRelation" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graphql-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graphql-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/userGroupRelation/core/use-cases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -385,23 +181,24 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/src/userGroupRelation/core/use-cases" />
+      <recent name="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors" />
+      <recent name="$PROJECT_DIR$/src/_common/database/entities" />
+      <recent name="$PROJECT_DIR$/src/_common/database" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/_common" />
       <recent name="$PROJECT_DIR$/src/_models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/userGroupRelation/core/use-cases" />
-      <recent name="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors" />
-      <recent name="$PROJECT_DIR$/src/_common/database/entities" />
-      <recent name="$PROJECT_DIR$/src/_common/database" />
-      <recent name="$PROJECT_DIR$/src/_common/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -416,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully">
+  <component name="RunManager" selected="Jest.UserGroupRelationResolver.Authed Queries.`getUserGroups` should return a user's groups successfully">
     <configuration name="Debug Sls Offline" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229" restartOnDisconnect="true">
       <method v="2" />
     </configuration>
@@ -450,6 +247,21 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="UserGroupRelationResolver.Authed Queries.`getUserGroups` should return a user's groups successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" />
+      <test-names>
+        <test-name value="UserGroupRelationResolver" />
+        <test-name value="Authed Queries" />
+        <test-name value="`getUserGroups` should return a user's groups successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -462,19 +274,6 @@
         <test-name value="UserGroupRelationResolver" />
         <test-name value="Authed Queries" />
         <test-name value="`me` should return logged user successfully" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserResolver" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
-      <test-names>
-        <test-name value="UserResolver" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -495,19 +294,19 @@
     </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Debug Sls Offline" />
-      <item itemvalue="Jest.UserResolver" />
       <item itemvalue="Jest.GroupResolver.Authed Mutations.`createGroup` should create a group and we should be able to retrieve by `getGroup`" />
       <item itemvalue="Jest.UserResolver.Authed Queries.`me` should return logged user successfully" />
       <item itemvalue="Jest.GroupResolver.Authed Queries.`myGroups` should return the logged user groups" />
       <item itemvalue="Jest.UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" />
+      <item itemvalue="Jest.UserGroupRelationResolver.Authed Queries.`getUserGroups` should return a user's groups successfully" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" />
+        <item itemvalue="Jest.UserGroupRelationResolver.Authed Queries.`getUserGroups` should return a user's groups successfully" />
         <item itemvalue="Jest.GroupResolver.Authed Queries.`myGroups` should return the logged user groups" />
-        <item itemvalue="Jest.GroupResolver.Authed Mutations.`createGroup` should create a group and we should be able to retrieve by `getGroup`" />
         <item itemvalue="Jest.UserResolver.Authed Queries.`me` should return logged user successfully" />
-        <item itemvalue="Jest.UserResolver" />
+        <item itemvalue="Jest.UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" />
+        <item itemvalue="Jest.GroupResolver.Authed Mutations.`createGroup` should create a group and we should be able to retrieve by `getGroup`" />
       </list>
     </recent_temporary>
   </component>
@@ -525,49 +324,50 @@
       <workItem from="1564017405577" duration="826000" />
       <workItem from="1564018754935" duration="3325000" />
       <workItem from="1564324682377" duration="47728000" />
+      <workItem from="1564417711364" duration="8638000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 19m 47s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 13h 48m 08s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 24m 32s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 13h 48m 36s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 27m 31s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 13h 48m 39s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 29m 36s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 13h 51m 24s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 34m 03s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 14h 07m 22s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 38m 33s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 14h 09m 51s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 40m 14s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 14h 13m 39s.xml">
+      <configuration name="UserResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 47m 36s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GroupResolver_Authed_Queries_`myGroups`_should_return_the_logged_user_groups - 2019.07.29 at 15h 34m 41s.xml">
+      <configuration name="GroupResolver.Authed Queries.`myGroups` should return the logged user groups" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 53m 53s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GroupResolver_Authed_Queries_`myGroups`_should_return_the_logged_user_groups - 2019.07.29 at 15h 35m 25s.xml">
+      <configuration name="GroupResolver.Authed Queries.`myGroups` should return the logged user groups" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="UserGroupRelationResolver_Authed_Queries_`me`_should_return_logged_user_successfully - 2019.07.29 at 01h 54m 18s.xml">
-      <configuration name="UserGroupRelationResolver.Authed Queries.`me` should return logged user successfully" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="UserGroupRelationResolver_Authed_Queries_`getUserGroups`_should_return_a_user's_groups_successfully - 2019.07.29 at 15h 37m 32s.xml">
+      <configuration name="UserGroupRelationResolver.Authed Queries.`getUserGroups` should return a user's groups successfully" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72521000" />
+    <option name="totallyTimeSpent" value="81159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-241" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18317358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -577,13 +377,13 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3083538" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41769043" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30784708" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5234604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36977887" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3680352" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -651,68 +451,63 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts</url>
           <line>11</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts</url>
           <line>5</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts</url>
-          <line>11</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts</url>
           <line>38</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts</url>
+          <line>41</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="54" />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts</url>
-          <line>37</line>
+          <line>49</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="56" />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>20</line>
+          <line>49</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="58" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts</url>
+          <line>25</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="68" />
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>57</line>
+          <url>file://$PROJECT_DIR$/src/server.ts</url>
+          <line>40</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="69" />
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>!!process.env.IS_OFFLINE</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>process.env.IS_OFFLINE</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>aryaGroups</expression-string>
         <language-id>TypeScript</language-id>
@@ -748,317 +543,10 @@
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>group</expression-string>
-        <language-id>TypeScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.context.uid</expression-string>
-        <language-id>TypeScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result.errors</expression-string>
-        <language-id>TypeScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_common/database/db.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jsdom/lib/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/authorization/authChecker.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@appsimples/dynamoose/dynamoose.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jest/setup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/dynamodb-local/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jest/globalJestTeardown.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/User.resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/models/User.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/entities/userEntity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/tableNames.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jest/globalJestSetup.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resolvers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/createSchema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generateSchema.Js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/dataloader/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/models/Group.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dataloader/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1069,60 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/schema.json" />
     <entry file="file://$PROJECT_DIR$/tslint.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3268">
@@ -1137,19 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts" />
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="273">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
@@ -1161,40 +587,354 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="23" />
+        <state relative-caret-position="903">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="-23">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/database/db.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/featureFlags.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/createSchema.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/stopLocalDynamodb.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/setupTestEnvironmentVariables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/launchLocalDynamodb.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dynamodb/backup/GraphQLMainTable">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="86" selection-start-column="86" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dynamoBackup.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dynamodb/backup/GraphQLMainTable.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dynamoRestore.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/models/User.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/presentation/User.resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_common/models/Group.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema.graphql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="544">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
-            <element signature="e#0#85#0" expanded="true" />
+            <element signature="e#0#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="294">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="9" column="115" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dynamo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/syncAllLocalDataToTables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest/globalJestSetup.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest/globalJestTeardown.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverless.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
