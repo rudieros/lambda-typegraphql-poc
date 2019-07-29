@@ -8,16 +8,20 @@
     "debug": "SLS_DEBUG=* && node --inspect=9229 ./node_modules/.bin/serverless offline start --useSeparateProcesses -s local",
     "deploy": "sls deploy",
     "db:local": "AWS_REGION=us-east-1 AWS_ACCESS_KEY_ID=local AWS_SECRET_ACCESS_KEY=local dynamodb-admin --open",
+    "sync": "ts-node ./scripts/createSchema.ts",
     "test": "jest"
   },
   "dependencies": {
     "@appsimples/dynamoose": "1.10.2",
     "apollo-server-lambda": "^2.6.8",
     "class-validator": "^0.9.1",
+    "dataloader": "^1.4.0",
     "graphql": "^14.4.2",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.10",
-    "type-graphql": "^0.17.4"
+    "type-graphql": "^0.17.4",
+    "typedi": "^0.8.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.17",
@@ -29,7 +33,9 @@
     "dynamodb-admin": "^3.2.0",
     "dynamodb-local": "^0.0.29",
     "graphql-tag": "^2.10.1",
+    "husky": "^3.0.1",
     "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
     "serverless": "^1.48.4",
     "serverless-dynamodb-local": "^0.2.38",
@@ -39,6 +45,8 @@
     "serverless-webpack": "^5.2.0",
     "ts-jest": "^24.0.2",
     "ts-loader": "^5.3.3",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
     "typescript": "^3.2.4",
     "webpack": "^4.29.0",
     "webpack-node-externals": "^1.7.2"
@@ -47,7 +55,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn run lint && git add ."
+      "pre-commit": "lint-staged && git add ."
     }
   },
   "lint-staged": {
