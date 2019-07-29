@@ -5,7 +5,7 @@ if (process.env.IS_OFFLINE) {
 }
 
 dynamoose.setDefaults({
-  create: !!process.env.IS_OFFLINE // Only force create the tables for local development and testing
+  create: !!process.env.IS_OFFLINE, // Only force create the tables for local development and testing
 })
 
 export const db = dynamoose

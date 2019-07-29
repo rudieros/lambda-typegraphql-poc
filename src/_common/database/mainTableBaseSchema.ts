@@ -1,28 +1,28 @@
 export interface MainTableDB {
-  id: string;
-  queryPartition1?: string;
-  querySort1?: string;
+  id: string
+  queryPartition1?: string
+  querySort1?: string
 }
 
 export const MainTableBaseSchema = {
   id: {
     type: String,
     validate: function(v) {
-      return v && v.length > 0;
+      return v && v.length > 0
     },
-    hashKey: true
+    hashKey: true,
   },
   queryPartition1: {
     type: String,
     required: false,
     index: {
-      name: "queryKey1Index",
-      rangeKey: "querySort1",
-      global: true
-    }
+      name: 'queryKey1Index',
+      rangeKey: 'querySort1',
+      global: true,
+    },
   },
   querySort1: {
     required: false,
-    type: String
-  }
-};
+    type: String,
+  },
+}

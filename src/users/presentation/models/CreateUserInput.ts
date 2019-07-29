@@ -9,5 +9,5 @@ export class CreateUserInput {
   @Field()
   @MaxLength(30)
   @IsEmail()
-  email: string;
+  email: string
 }

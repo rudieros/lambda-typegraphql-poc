@@ -1,13 +1,13 @@
-import { Field, GraphQLISODateTime, ID, ObjectType } from "type-graphql";
+import { Field, GraphQLISODateTime, ID, ObjectType } from 'type-graphql'
 
 @ObjectType()
 export class UserGroupRelation {
   @Field(() => ID)
-  userId: string;
+  userId: string
 
-  @Field(type => String)
-  groupId: string;
+  @Field((type) => String)
+  groupId: string
 
-  @Field(type => GraphQLISODateTime)
-  createdAt?: string;
+  @Field((type) => GraphQLISODateTime)
+  createdAt?: string
 }

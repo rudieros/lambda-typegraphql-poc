@@ -8,9 +8,9 @@ export class User {
   @Field()
   name: string
 
-  @Field(type => [User], { nullable: true })
+  @Field((type) => [User], { nullable: true })
   friends?: User[]
 
-  @Field(type => Int, { nullable: true })
+  @Field((type) => Int, { nullable: true })
   friendCount?: number
 }

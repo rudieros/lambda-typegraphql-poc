@@ -1,4 +1,4 @@
 export const TableNames = {
-  MAIN: "GraphQLMainTable",
-  RELATIONS: "GraphQLRelationsTable"
-};
+  MAIN: 'GraphQLMainTable',
+  RELATIONS: 'GraphQLRelationsTable',
+}

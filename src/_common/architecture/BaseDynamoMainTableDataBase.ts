@@ -1,16 +1,16 @@
-import { ContainerInstance } from "typedi";
-import { OSContextType } from "../../context";
+import { ContainerInstance } from 'typedi'
+import { OSContextType } from '../../context'
 
 export class BaseDynamoMainTableDataBase {
-  context: OSContextType;
+  context: OSContextType
   constructor(container: ContainerInstance) {
-    this.context = container.get("context");
+    this.context = container.get('context')
   }
   mapIdToDynamoPrimaryKey(id) {
-    return { id };
+    return { id }
   }
   mapParamsToDynamoQueryKey1(params: any) {
-    throw (new Error("NotImplemented").message =
-      "You need to implement BaseDynamoMainTableDataBase.mapParamsToDynamoQueryKey1");
+    throw (new Error('NotImplemented').message =
+      'You need to implement BaseDynamoMainTableDataBase.mapParamsToDynamoQueryKey1')
   }
 }

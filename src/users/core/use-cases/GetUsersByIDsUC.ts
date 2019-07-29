@@ -1,7 +1,7 @@
-import { BaseUseCase } from "../../../_common/architecture/BaseUseCase";
-import { User } from "../../../_common/models/User";
-import { Inject, Service } from "typedi";
-import { UserDataSource } from "../data-sources/UserDataSource";
+import { BaseUseCase } from '../../../_common/architecture/BaseUseCase'
+import { User } from '../../../_common/models/User'
+import { Inject, Service } from 'typedi'
+import { UserDataSource } from '../data-sources/UserDataSource'
 
 @Service()
 export class GetUsersByIDsUC extends BaseUseCase<
@@ -9,13 +9,13 @@ export class GetUsersByIDsUC extends BaseUseCase<
   User | User[]
 > {
   @Inject(UserDataSource)
-  userDataBase: UserDataSource;
+  userDataBase: UserDataSource
 
   async execute(input: string[] | string): Promise<User[] | User> {
     if (input instanceof Array) {
-      return this.userDataBase.getUsers(input);
+      return this.userDataBase.getUsers(input)
     }
-    const users = await this.userDataBase.getUsers([input]);
-    return users[0];
+    const users = await this.userDataBase.getUsers([input])
+    return users[0]
   }
 }

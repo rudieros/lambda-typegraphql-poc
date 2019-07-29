@@ -1,26 +1,26 @@
-import { Field, ID, Int, ObjectType } from "type-graphql";
-import { User } from "./User";
+import { Field, ID, Int, ObjectType } from 'type-graphql'
+import { User } from './User'
 
 @ObjectType()
 export class Group {
   @Field(() => ID)
-  id: string;
+  id: string
 
   @Field()
-  name: string;
+  name: string
 
-  @Field(type => Boolean)
-  isCreatedByLoggedUser?: boolean;
+  @Field((type) => Boolean)
+  isCreatedByLoggedUser?: boolean
 
-  @Field(type => User)
-  creator?: User;
+  @Field((type) => User)
+  creator?: User
 
-  @Field(type => [User])
-  participants?: User[];
+  @Field((type) => [User])
+  participants?: User[]
 
-  @Field(type => Int)
-  memberCount?: number;
+  @Field((type) => Int)
+  memberCount?: number
 
-  @Field(type => Boolean)
-  isLoggedUserMember?: boolean;
+  @Field((type) => Boolean)
+  isLoggedUserMember?: boolean
 }

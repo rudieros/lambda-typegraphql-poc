@@ -6,7 +6,7 @@ export class PaginationArgs {
   @Field({ nullable: true })
   pageKey?: string = null
 
-  @Field(type => Int)
+  @Field((type) => Int)
   @Max(30)
-  limit: number = 25;
+  limit: number = 25
 }

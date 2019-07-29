@@ -1,8 +1,8 @@
-import { ContainerInstance } from "typedi";
+import { ContainerInstance } from 'typedi'
 
 export interface OSContextType {
-  uid: string | undefined;
-  userRole: any | undefined;
-  requestId: string;
-  container: ContainerInstance;
+  uid: string | undefined
+  userRole: any | undefined
+  requestId: string
+  container: ContainerInstance
 }

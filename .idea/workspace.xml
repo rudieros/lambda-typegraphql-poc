@@ -2,62 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b76d92a5-6908-4dfd-b42f-4e663e6058c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/createSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/models/Group.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_common/utils/generateId.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CreateGroupUC.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest/globalJestSetup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest/globalJestSetup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generateSchema.Js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/architecture/BaseDynamoMainTableDataBase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/authorization/authChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/authorization/authChecker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/database/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/groupEntity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userEntity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userRelationEntity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/entities/userGroupRelationEntity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/mainTableBaseSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/database/seeds/users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/relationsTableBaseSchema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/database/tableNames.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/database/tableNames.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/graphql/commonTypes/PaginationArgs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUsersMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserMocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/mocks/graphqlInputMocks/groupInputMocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/models/Group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/Group.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/models/UserGroupRelation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_common/utils/generateId.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_common/utils/generateId.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/container.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/data-sources/GroupDataSource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/CreateGroupUC.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIdUC.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/data/DynamoGroupDatabase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/Group.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/__tests__/Group.resolver.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resolvers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/data-sources/UserDataSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/core/use-cases/CreateFollowRelationUC.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/data/UserDataBase.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/User.resolver.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/presentation/models/CreateFollowRelationInput.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.webpack/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="147">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -84,12 +72,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="544">
+              <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
-                <element signature="e#0#84#0" expanded="true" />
+                <element signature="e#0#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +95,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="378">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.prettierrc.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -107,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="210">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -119,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state relative-caret-position="403">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding>
                 <element signature="e#0#100#0" expanded="true" />
               </folding>
@@ -131,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="457">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -145,9 +151,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
               <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/_common/authorization/authChecker.ts" />
-        <option value="$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts" />
-        <option value="$PROJECT_DIR$/src/users/core/use-cases/GetUsersByIDsUC.ts" />
         <option value="$PROJECT_DIR$/src/_common/mocks/apolloServerMock.ts" />
         <option value="$PROJECT_DIR$/src/users/presentation/__tests__/User.resolver.test.ts" />
         <option value="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByOwnerIDUC.ts" />
@@ -214,7 +214,6 @@
         <option value="$PROJECT_DIR$/jest/globalJestSetup.ts" />
         <option value="$PROJECT_DIR$/schema.json" />
         <option value="$PROJECT_DIR$/src/resolvers.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts" />
         <option value="$PROJECT_DIR$/scripts/createSchema.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -223,11 +222,15 @@
         <option value="$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts" />
         <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/src/groups/core/use-cases/GetGroupsByIDsUC.ts" />
-        <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts" />
+        <option value="$PROJECT_DIR$/tslint.json" />
+        <option value="$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts" />
+        <option value="$PROJECT_DIR$/prettierrc.json" />
+        <option value="$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts" />
       </list>
     </option>
   </component>
@@ -521,7 +524,7 @@
       <workItem from="1562899916719" duration="20642000" />
       <workItem from="1564017405577" duration="826000" />
       <workItem from="1564018754935" duration="3325000" />
-      <workItem from="1564324682377" duration="47072000" />
+      <workItem from="1564324682377" duration="47728000" />
     </task>
     <servers />
   </component>
@@ -558,7 +561,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71865000" />
+    <option name="totallyTimeSpent" value="72521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -647,7 +650,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts</url>
-          <line>10</line>
+          <line>11</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -659,13 +662,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/users/data/DynamoUserDatabase.ts</url>
-          <line>12</line>
+          <line>11</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectGroupsMocks.ts</url>
-          <line>42</line>
+          <line>34</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
@@ -683,39 +686,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts</url>
-          <line>46</line>
+          <line>37</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>41</line>
+          <line>20</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>49</line>
+          <line>58</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>48</line>
+          <line>57</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -775,39 +766,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateFollowRelationUC.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@appsimples/dynamoose/dist/Attribute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="377" column="14" selection-start-line="377" selection-start-column="14" selection-end-line="377" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users/presentation/models/CreateUserInput.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groups/presentation/models/CreateGroupInput.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_common/database/db.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1026,13 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/users/core/use-cases/CreateUserUC.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1088,9 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,39 +1069,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/data-sources/UserGroupRelationDataSource.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="210">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1170,8 +1091,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_common/mocks/databaseMockInjectors/injectUserGroupRelationMocks.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="457">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
@@ -1180,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/data/DynamoUserGroupRelationDatabase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state relative-caret-position="403">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding>
             <element signature="e#0#100#0" expanded="true" />
           </folding>
@@ -1202,12 +1123,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3268">
+          <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetGroupsByIDsUC.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/GetUserGroupRelations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prettierrc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/__tests__/UserGroupRelation.resolver.test.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="147">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/presentation/UserGroupRelation.resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userGroupRelation/core/use-cases/CheckUserGroupRelation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
