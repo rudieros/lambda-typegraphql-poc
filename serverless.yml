@@ -2,10 +2,10 @@ service:
   name: graphql-poc
 
 plugins:
+  - serverless-dotenv-plugin
   - serverless-webpack
-#  - serverless-dynamodb-local
   - serverless-offline
-#  - serverless-layers
+  - serverless-layers
 
 provider:
   name: aws

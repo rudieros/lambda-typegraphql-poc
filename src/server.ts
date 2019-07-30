@@ -39,14 +39,13 @@ export const server = new ApolloServer({
 
 // Express app for graphiql
 const app = express()
-app.use('/graphiql', (req, res) => {
-  res.sendFile(path.join(process.cwd() + '/src/graphiql.html'))
+app.use('/docs', (req, res) => {
+  res.sendFile(path.join(process.cwd() + '/src/_common/graphql/graphiql.html'))
 })
 
 const graphiqlServer = awsServerlessExpress.createServer(app)
 
 export const graphql = (e, context, calllback) => {
-  console.log('Here man!', e.path)
   if (e.path === '/graphql') {
     server.createHandler({
       cors: {
@@ -55,7 +54,7 @@ export const graphql = (e, context, calllback) => {
         allowedHeaders: '*',
       },
     })(e, context, calllback)
-  } else if (e.path === '/graphiql') {
+  } else if (e.path === '/docs') {
     awsServerlessExpress.proxy(graphiqlServer, e, context)
   }
 }
