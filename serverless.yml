@@ -3,15 +3,19 @@ service:
 
 plugins:
   - serverless-webpack
-  - serverless-dynamodb-local
+#  - serverless-dynamodb-local
   - serverless-offline
-  - serverless-layers
+#  - serverless-layers
 
 provider:
   name: aws
   runtime: nodejs10.x
   deploymentBucket:
     name: graphql-poc-serverless
+
+package:
+  include:
+    - src/graphiql.html
 
 functions:
   api:
@@ -23,6 +27,8 @@ functions:
           cors: true
 
 custom:
+  serverless-offline:
+    disableCookieValidation: true
   dynamodb:
     stages:
       - local

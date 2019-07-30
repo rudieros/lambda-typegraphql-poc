@@ -7,10 +7,10 @@ import { authChecker } from './_common/authorization/authChecker'
 import { Container } from 'typedi'
 import { OSContextType } from './context'
 import { setupContainer } from './container'
-import * as fs from 'fs'
 import * as path from 'path'
 import { resolvers } from './resolvers'
-import { APIGatewayEvent, Callback, Context } from 'aws-lambda'
+import express from 'express'
+import awsServerlessExpress from 'aws-serverless-express'
 
 export const schema = buildSchemaSync({
   resolvers,
@@ -37,19 +37,25 @@ export const server = new ApolloServer({
   },
 })
 
-export const graphql = (
-  e: APIGatewayEvent,
-  context: Context,
-  callback: Callback
-) => {
+// Express app for graphiql
+const app = express()
+app.use('/graphiql', (req, res) => {
+  res.sendFile(path.join(process.cwd() + '/src/graphiql.html'))
+})
+
+const graphiqlServer = awsServerlessExpress.createServer(app)
+
+export const graphql = (e, context, calllback) => {
+  console.log('Here man!', e.path)
   if (e.path === '/graphql') {
-    return server.createHandler({
+    server.createHandler({
       cors: {
         origin: '*',
         methods: '*',
         allowedHeaders: '*',
       },
-    })(e, context, callback)
+    })(e, context, calllback)
   } else if (e.path === '/graphiql') {
+    awsServerlessExpress.proxy(graphiqlServer, e, context)
   }
 }

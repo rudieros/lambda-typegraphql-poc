@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "es2016",
-      "esnext.asynciterable"
-    ],
+    "lib": ["es2016", "esnext.asynciterable"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -15,7 +12,5 @@
     "target": "es2016",
     "outDir": "lib"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
