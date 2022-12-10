@@ -20,7 +20,7 @@
     "aws-serverless-express": "^3.3.6",
     "class-validator": "^0.9.1",
     "dataloader": "^1.4.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^14.4.2",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.10",
